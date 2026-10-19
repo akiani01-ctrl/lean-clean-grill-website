@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.className = "js";</script>
 </head>
 <body>
   <a class="skip" href="#menu">Skip to the menu</a>
@@ -35,7 +36,7 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <p class="badge">100% halal &nbsp;/&nbsp; macros on everything</p>
-        <h1 id="hero-h">Every gram<br>counts.</h1>
+        <h1 id="hero-h"><span class="line"><span>Every gram</span></span> <span class="line"><span>counts.</span></span></h1>
         <p class="hero-lede">Burgers, grilled chicken and salmon on a 12g-protein bun. Bowls, shakes and protein sweets. Made fresh, made to fuel you.</p>
         <div class="hero-ctas">
           <a class="btn btn-green" href="#menu">View the menu</a>
@@ -46,12 +47,36 @@
         <img src="images/hero-burger.jpg" alt="The Classic Beef Burger: seared beef, melted cheese, lettuce, tomato and red onion on a sesame bun" width="1650" height="956" fetchpriority="high">
       </figure>
     </div>
-    <div class="hero-math" aria-label="The Classic Beef Burger has 39 grams of protein: 12 from the bun, 5 from cheese, 22 from beef">
-      <div class="math-inner">
-        <span class="m"><b>12g</b> bun</span><span class="op" aria-hidden="true">+</span>
-        <span class="m"><b>5g</b> cheese</span><span class="op" aria-hidden="true">+</span>
-        <span class="m"><b>22g</b> beef</span><span class="op" aria-hidden="true">=</span>
-        <span class="m total"><b>39g</b> protein in the Classic</span>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Every gram counts</span><i></i><span>100% halal</span><i></i><span>Made to fuel you</span><i></i><span>Macros on everything</span><i></i><span>Eat like it matters</span><i></i>
+        <span>Every gram counts</span><i></i><span>100% halal</span><i></i><span>Made to fuel you</span><i></i><span>Macros on everything</span><i></i><span>Eat like it matters</span><i></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exploded burger: layers separate as you scroll -->
+  <section class="split" id="inside" aria-labelledby="h-split">
+    <div class="split-stage">
+      <div class="split-copy">
+        <p class="split-kicker">Inside the Classic</p>
+        <h2 id="h-split">Every layer pulls its weight.</h2>
+        <p class="split-total"><b id="split-count">39</b><span>g protein</span></p>
+        <p class="split-hint">Keep scrolling to break it down.</p>
+        <p class="sr-only">The Classic Beef Burger: high-protein bun 12g, cheese 5g and halal beef 22g, for 39g of protein.</p>
+      </div>
+      <div class="split-burger" aria-hidden="true">
+        <img class="whole" src="images/hero-burger.jpg" alt="" width="1650" height="956">
+        <img class="layer" src="images/split/1-top-bun.webp" alt="" width="1650" height="956">
+        <img class="layer" src="images/split/2-toppings.webp" alt="" width="1650" height="956">
+        <img class="layer" src="images/split/3-patty.webp" alt="" width="1650" height="956">
+        <img class="layer" src="images/split/4-tomato.webp" alt="" width="1650" height="956">
+        <img class="layer" src="images/split/5-bottom-bun.webp" alt="" width="1650" height="956">
+        <div class="tag t-right" data-y="17"><b>12g</b> High-protein sesame bun</div>
+        <div class="tag t-left" data-y="40">Lettuce, red onion &amp; sauce</div>
+        <div class="tag t-right" data-y="62"><b>27g</b> Cheese 5g + halal beef 22g</div>
+        <div class="tag t-left" data-y="77">Tomato &amp; crisp lettuce</div>
+        <div class="tag t-right" data-y="92">Toasted bottom bun</div>
       </div>
     </div>
   </section>
@@ -335,5 +360,6 @@
   </footer>
 
   <script src="builder.js"></script>
+  <script src="motion.js"></script>
 </body>
 </html>

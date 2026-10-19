@@ -97,7 +97,7 @@
       if (it.id !== 'none') { add(t, it); lines.push([it.name, it.pro]); }
     });
 
-    document.getElementById('t-pro').textContent = t.pro;
+    tween(document.getElementById('t-pro'), t.pro);
     document.getElementById('t-cal').textContent = t.cal.toLocaleString();
     document.getElementById('t-carb').textContent = t.carb + 'g';
 
@@ -121,6 +121,19 @@
       var b = document.createElement('span'); b.textContent = l[1] + 'g';
       li.appendChild(a); li.appendChild(b); ul.appendChild(li);
     });
+  }
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tween(el, to) {
+    var from = parseInt(el.textContent, 10) || 0;
+    if (reduceMotion || from === to) { el.textContent = to; return; }
+    var t0 = null;
+    el.classList.remove('bump'); void el.offsetWidth; el.classList.add('bump');
+    (function step(ts) {
+      if (!t0) t0 = ts;
+      var k = Math.min(1, (ts - t0) / 450);
+      el.textContent = Math.round(from + (to - from) * (1 - Math.pow(1 - k, 3)));
+      if (k < 1) requestAnimationFrame(step);
+    })(performance.now());
   }
   function add(t, i) { t.pro += i.pro; t.cal += i.cal; t.carb += i.carb; t.price += i.price; }
 
