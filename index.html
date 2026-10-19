@@ -4,140 +4,150 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lean Clean Grill</title>
-  <meta name="description" content="High-protein, 100% halal burgers, chicken, salmon, bowls and shakes. Calories, protein, carbs and fat listed on every item. Every gram counts.">
+  <meta name="description" content="High-protein, 100% halal burgers, grilled chicken, salmon, bowls and shakes. Calories, protein, carbs and fat on every item. Every gram counts.">
   <meta property="og:title" content="Lean Clean Grill">
   <meta property="og:description" content="High-protein, 100% halal. Every gram counts.">
   <meta property="og:image" content="images/hero-burger.jpg">
-  <meta name="theme-color" content="#0f120f">
+  <meta name="theme-color" content="#000000">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#menu">Skip to the menu</a>
 
-  <header class="hero">
-    <nav class="top" aria-label="Main">
-      <a class="logo" href="#">Lean Clean <span>Grill</span></a>
-      <div class="top-links">
+  <header class="site-head">
+    <div class="head-inner">
+      <a class="logo" href="#top" aria-label="Lean Clean Grill home">Lean Clean <span>Grill</span></a>
+      <nav class="head-nav" aria-label="Main">
         <a href="#menu">Menu</a>
         <a href="#beast">Beast Meal</a>
-        <a href="#visit">Order</a>
-      </div>
-    </nav>
-
-    <div class="hero-inner">
-      <div class="hero-copy">
-        <p class="halal">100% halal</p>
-        <h1>Every gram counts.</h1>
-        <p class="lede">High-protein burgers, chicken, salmon, bowls and shakes, made fresh. Calories, protein, carbs and fat are listed on every item, so you always know what you're eating.</p>
-        <a class="btn" href="#menu">See the menu</a>
-      </div>
-
-      <figure class="build">
-        <img src="images/hero-burger.jpg" alt="The Classic Beef Burger with cheese, lettuce, tomato and red onion on a sesame bun" width="825" height="478">
-        <figcaption class="math" aria-label="Classic Beef Burger protein: bun 12 grams plus cheese 5 grams plus beef 22 grams equals 39 grams">
-          <span><b>12g</b> bun</span>
-          <i aria-hidden="true">+</i>
-          <span><b>5g</b> cheese</span>
-          <i aria-hidden="true">+</i>
-          <span><b>22g</b> beef</span>
-          <i aria-hidden="true">=</i>
-          <span class="total"><b>39g</b> protein</span>
-        </figcaption>
-      </figure>
+        <a href="#build">Nutrition</a>
+      </nav>
+      <a class="order-pill" href="#order">Order now</a>
     </div>
   </header>
 
-  <main>
-    <nav class="jump" id="menu" aria-label="Menu sections">
-      <a href="#sandwiches">Sandwiches</a>
-      <a href="#bowls">Bowls</a>
-      <a href="#beast">Beast Meal</a>
-      <a href="#snacks">Snacks &amp; sweets</a>
-      <a href="#shakes">Shakes</a>
-      <a href="#drinks">Yogurt &amp; drinks</a>
-    </nav>
-
-    <!-- Sandwiches -->
-    <section class="menu-sec" id="sandwiches" aria-labelledby="h-sand">
-      <div class="sec-head">
-        <h2 id="h-sand">Sandwiches</h2>
-        <p>On our high-protein bun with 12g of protein. Want it lighter? Get any sandwich lettuce-wrapped for the same price.</p>
-      </div>
-      <div class="cards">
-        <article class="item big">
-          <img src="images/classic-burger.jpg" alt="Classic Beef Burger" width="270" height="270">
-          <div class="item-body">
-            <div class="row"><h3>The Classic Beef Burger</h3><p class="price">$9.99</p></div>
-            <p class="protein"><b>39g</b> protein</p>
-            <p class="build-line">Bun 12g + cheese 5g + beef 22g</p>
-            <p class="macros">~450 cal &nbsp;|&nbsp; 40g carbs &nbsp;|&nbsp; 19g fat</p>
-            <p class="double">Double meat +$4.49: 61g protein, ~650 cal</p>
-          </div>
-        </article>
-        <article class="item big">
-          <img src="images/chicken-sandwich.jpg" alt="Grilled Chicken Sandwich" width="270" height="257">
-          <div class="item-body">
-            <div class="row"><h3>Grilled Chicken Sandwich</h3><p class="price">$8.99</p></div>
-            <p class="protein"><b>56g</b> protein</p>
-            <p class="build-line">Bun 12g + chicken 44g</p>
-            <p class="macros">~520 cal &nbsp;|&nbsp; 40g carbs &nbsp;|&nbsp; 10g fat</p>
-            <p class="double">Double meat +$3.99: 100g protein, ~750 cal</p>
-          </div>
-        </article>
-        <article class="item big">
-          <img src="images/salmon-sandwich.jpg" alt="Salmon Sandwich" width="270" height="257">
-          <div class="item-body">
-            <div class="row"><h3>Salmon Sandwich</h3><p class="price">$14.99</p></div>
-            <p class="protein"><b>46g</b> protein</p>
-            <p class="build-line">Bun 12g + salmon 34g</p>
-            <p class="macros">~600 cal &nbsp;|&nbsp; 40g carbs &nbsp;|&nbsp; 22g fat</p>
-            <p class="double">Double meat +$9.99: 80g protein, ~950 cal</p>
-          </div>
-        </article>
-      </div>
-
-      <aside class="wrap-note">
-        <img src="images/lettuce-wrap.jpg" alt="A burger wrapped in lettuce instead of a bun" width="275" height="300">
-        <div>
-          <h3>No bun? No problem.</h3>
-          <p>Lettuce-wrap any sandwich for the same price. That's about 180 fewer calories and 38g fewer carbs.</p>
+  <!-- Hero -->
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="badge">100% halal &nbsp;/&nbsp; macros on everything</p>
+        <h1 id="hero-h">Every gram<br>counts.</h1>
+        <p class="hero-lede">Burgers, grilled chicken and salmon on a 12g-protein bun. Bowls, shakes and protein sweets. Made fresh, made to fuel you.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-green" href="#menu">View the menu</a>
+          <a class="btn btn-line" href="#build">Build your meal</a>
         </div>
-      </aside>
+      </div>
+      <figure class="hero-figure">
+        <img src="images/hero-burger.jpg" alt="The Classic Beef Burger: seared beef, melted cheese, lettuce, tomato and red onion on a sesame bun" width="1650" height="956" fetchpriority="high">
+      </figure>
+    </div>
+    <div class="hero-math" aria-label="The Classic Beef Burger has 39 grams of protein: 12 from the bun, 5 from cheese, 22 from beef">
+      <div class="math-inner">
+        <span class="m"><b>12g</b> bun</span><span class="op" aria-hidden="true">+</span>
+        <span class="m"><b>5g</b> cheese</span><span class="op" aria-hidden="true">+</span>
+        <span class="m"><b>22g</b> beef</span><span class="op" aria-hidden="true">=</span>
+        <span class="m total"><b>39g</b> protein in the Classic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category tiles -->
+  <nav class="cats" id="menu" aria-label="Menu categories">
+    <div class="cats-inner">
+      <a href="#sandwiches"><img src="images/classic-burger.jpg" alt="" width="120" height="120"><span>Sandwiches</span></a>
+      <a href="#bowls"><img src="images/chicken-bowl.jpg" alt="" width="120" height="120"><span>Bowls</span></a>
+      <a href="#beast"><img src="images/beast-meal.jpg" alt="" width="120" height="120"><span>Beast Meal</span></a>
+      <a href="#shakes"><img src="images/shake-chocolate.jpg" alt="" width="120" height="120"><span>Shakes</span></a>
+      <a href="#snacks"><img src="images/protein-cookie.jpg" alt="" width="120" height="120"><span>Snacks &amp; sweets</span></a>
+      <a href="#drinks"><img src="images/yogurt-cup.jpg" alt="" width="120" height="120"><span>Yogurt &amp; drinks</span></a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Sandwiches -->
+    <section class="sec" id="sandwiches" aria-labelledby="h-sand">
+      <header class="sec-head">
+        <h2 id="h-sand">Sandwiches</h2>
+        <p>Every sandwich starts with our high-protein bun: 12g of protein before the meat goes on. Double the meat on any of them.</p>
+      </header>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-img"><img src="images/classic-burger.jpg" alt="The Classic Beef Burger" width="1080" height="1080"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>The Classic Beef Burger</h3><p class="price">$9.99</p></div>
+            <p class="pro"><b>39g</b> protein</p>
+            <p class="stack">Bun 12g + cheese 5g + beef 22g</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>450</b> cal</li><li><b>40g</b> carbs</li><li><b>19g</b> fat</li></ul>
+            <p class="upgrade"><span>Double meat</span> +$4.49 &nbsp;&middot;&nbsp; 61g protein, ~650 cal</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="images/chicken-sandwich.jpg" alt="Grilled Chicken Sandwich" width="1080" height="1028"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Grilled Chicken Sandwich</h3><p class="price">$8.99</p></div>
+            <p class="pro"><b>56g</b> protein</p>
+            <p class="stack">Bun 12g + chicken 44g</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>520</b> cal</li><li><b>40g</b> carbs</li><li><b>10g</b> fat</li></ul>
+            <p class="upgrade"><span>Double meat</span> +$3.99 &nbsp;&middot;&nbsp; 100g protein, ~750 cal</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-img"><img src="images/salmon-sandwich.jpg" alt="Salmon Sandwich" width="1080" height="1028"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Salmon Sandwich</h3><p class="price">$14.99</p></div>
+            <p class="pro"><b>46g</b> protein</p>
+            <p class="stack">Bun 12g + salmon 34g</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>600</b> cal</li><li><b>40g</b> carbs</li><li><b>22g</b> fat</li></ul>
+            <p class="upgrade"><span>Double meat</span> +$9.99 &nbsp;&middot;&nbsp; 80g protein, ~950 cal</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lettuce wrap promo -->
+    <section class="promo" aria-labelledby="h-wrap">
+      <div class="promo-img"><img src="images/lettuce-wrap.jpg" alt="A burger wrapped in crisp lettuce instead of a bun" width="1100" height="1200"></div>
+      <div class="promo-copy">
+        <h2 id="h-wrap">No bun?<br>No problem.</h2>
+        <p>Get any sandwich wrapped in crisp lettuce for the same price. About 180 fewer calories and 38g fewer carbs.</p>
+        <a class="btn btn-green" href="#build">Try it in the meal builder</a>
+      </div>
     </section>
 
     <!-- Bowls -->
-    <section class="menu-sec" id="bowls" aria-labelledby="h-bowls">
-      <div class="sec-head">
+    <section class="sec" id="bowls" aria-labelledby="h-bowls">
+      <header class="sec-head">
         <h2 id="h-bowls">Protein bowls</h2>
-        <p>Rice, fresh greens and Greek yogurt sauce.</p>
-      </div>
-      <div class="cards">
-        <article class="item">
-          <img src="images/chicken-bowl.jpg" alt="Chicken Bowl" width="282" height="250">
-          <div class="item-body">
-            <div class="row"><h3>Chicken Bowl</h3><p class="price">$7.99</p></div>
-            <p class="protein"><b>52g</b> protein</p>
-            <p class="macros">~500 cal &nbsp;|&nbsp; 53g carbs &nbsp;|&nbsp; 6g fat</p>
+        <p>Rice, fresh greens and our Greek yogurt sauce, topped with your protein.</p>
+      </header>
+      <div class="grid-3">
+        <article class="card">
+          <div class="card-img"><img src="images/chicken-bowl.jpg" alt="Chicken Bowl" width="1128" height="1000"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Chicken Bowl</h3><p class="price">$7.99</p></div>
+            <p class="pro"><b>52g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>500</b> cal</li><li><b>53g</b> carbs</li><li><b>6g</b> fat</li></ul>
           </div>
         </article>
-        <article class="item">
-          <img src="images/beef-bowl.jpg" alt="Beef Bowl" width="282" height="250">
-          <div class="item-body">
-            <div class="row"><h3>Beef Bowl (6 oz)</h3><p class="price">$10.49</p></div>
-            <p class="protein"><b>41g</b> protein</p>
-            <p class="macros">~570 cal &nbsp;|&nbsp; 53g carbs &nbsp;|&nbsp; 18g fat</p>
+        <article class="card">
+          <div class="card-img"><img src="images/beef-bowl.jpg" alt="Beef Bowl" width="1128" height="1000"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Beef Bowl <small>6 oz</small></h3><p class="price">$10.49</p></div>
+            <p class="pro"><b>41g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>570</b> cal</li><li><b>53g</b> carbs</li><li><b>18g</b> fat</li></ul>
           </div>
         </article>
-        <article class="item">
-          <img src="images/salmon-bowl.jpg" alt="Salmon Bowl" width="282" height="252">
-          <div class="item-body">
-            <div class="row"><h3>Salmon Bowl</h3><p class="price">$13.49</p></div>
-            <p class="protein"><b>42g</b> protein</p>
-            <p class="macros">~620 cal &nbsp;|&nbsp; 53g carbs &nbsp;|&nbsp; 22g fat</p>
+        <article class="card">
+          <div class="card-img"><img src="images/salmon-bowl.jpg" alt="Salmon Bowl" width="1128" height="1008"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Salmon Bowl</h3><p class="price">$13.49</p></div>
+            <p class="pro"><b>42g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>620</b> cal</li><li><b>53g</b> carbs</li><li><b>22g</b> fat</li></ul>
           </div>
         </article>
       </div>
@@ -145,93 +155,83 @@
 
     <!-- Beast Meal -->
     <section class="beast" id="beast" aria-labelledby="h-beast">
-      <div class="beast-copy">
-        <h2 id="h-beast">The Beast Meal</h2>
-        <p class="beast-sub">Sandwich + snack + sweet + shake. 110g+ of protein in one meal.</p>
-        <table class="beast-table">
-          <caption class="sr-only">Beast Meal options</caption>
-          <thead>
-            <tr><th scope="col">Built with</th><th scope="col">Price</th><th scope="col">Protein</th><th scope="col">Cal</th><th scope="col">Carbs</th><th scope="col">Fat</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Beef burger</th><td>$23.99</td><td class="p">114g</td><td>1,060</td><td>84g</td><td>38g</td></tr>
-            <tr><th scope="row">Grilled chicken</th><td>$22.99</td><td class="p">131g</td><td>1,130</td><td>84g</td><td>29g</td></tr>
-            <tr><th scope="row">Salmon</th><td>$28.99</td><td class="p">121g</td><td>1,210</td><td>84g</td><td>41g</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <img class="beast-img" src="images/beast-meal.jpg" alt="Beast Meal: burger, protein chips, protein cookie and protein brownie" width="485" height="260">
-    </section>
-
-    <!-- Snacks & sweets -->
-    <section class="menu-sec" id="snacks" aria-labelledby="h-snacks">
-      <div class="sec-head">
-        <h2 id="h-snacks">Snacks &amp; sweets</h2>
-        <p>A protein snack instead of fries, and dessert that still pulls its weight.</p>
-      </div>
-      <div class="list-grid">
-        <ul class="mini-list" aria-label="Protein snacks">
-          <li>
-            <img src="images/protein-chips.jpg" alt="" width="189" height="123">
-            <div><div class="row"><h3>Protein Chips</h3><p class="price">$3.99</p></div><p class="macros"><b>19g protein</b> &nbsp;|&nbsp; ~140 cal &nbsp;|&nbsp; 5g carbs &nbsp;|&nbsp; 6g fat</p></div>
-          </li>
-          <li>
-            <img src="images/beef-jerky.jpg" alt="" width="189" height="125">
-            <div><div class="row"><h3>Halal Beef Jerky</h3><p class="price">$10.99</p></div><p class="macros"><b>13g protein</b> &nbsp;|&nbsp; ~70 cal &nbsp;|&nbsp; 2g carbs &nbsp;|&nbsp; 1g fat, per serving</p></div>
-          </li>
-        </ul>
-        <ul class="mini-list" aria-label="Protein sweets">
-          <li>
-            <img src="images/protein-cookie.jpg" alt="" width="189" height="125">
-            <div><div class="row"><h3>Protein Cookie</h3><p class="price">$4.49</p></div><p class="macros"><b>16g protein</b> &nbsp;|&nbsp; ~220 cal &nbsp;|&nbsp; 25g carbs &nbsp;|&nbsp; 9g fat</p></div>
-          </li>
-          <li>
-            <img src="images/protein-brownie.jpg" alt="" width="189" height="123">
-            <div><div class="row"><h3>Protein Brownie</h3><p class="price">$4.49</p></div><p class="macros"><b>15g protein</b> &nbsp;|&nbsp; ~200 cal &nbsp;|&nbsp; 22g carbs &nbsp;|&nbsp; 7g fat</p></div>
-          </li>
-          <li>
-            <img src="images/protein-bar.jpg" alt="" width="189" height="122">
-            <div><div class="row"><h3>Protein Bar</h3><p class="price">$4.99</p></div><p class="macros"><b>20g protein</b> &nbsp;|&nbsp; ~200 cal &nbsp;|&nbsp; 18g carbs &nbsp;|&nbsp; 8g fat</p></div>
-          </li>
-        </ul>
+      <div class="beast-inner">
+        <div class="beast-copy">
+          <p class="beast-kicker">Our signature combo</p>
+          <h2 id="h-beast">The Beast Meal</h2>
+          <p class="beast-lede">A sandwich with protein chips, a protein cookie and a chocolate protein shake. Over 110g of protein, for less than ordering it all separately.</p>
+          <div class="beast-options">
+            <div class="opt"><h3>Beef burger</h3><p class="opt-price">$23.99</p><p class="opt-pro"><b>114g</b> protein</p><p class="opt-mac"><span>1,060 cal</span><span>84g carbs, 38g fat</span></p></div>
+            <div class="opt"><h3>Grilled chicken</h3><p class="opt-price">$22.99</p><p class="opt-pro"><b>131g</b> protein</p><p class="opt-mac"><span>1,130 cal</span><span>84g carbs, 29g fat</span></p></div>
+            <div class="opt"><h3>Salmon</h3><p class="opt-price">$28.99</p><p class="opt-pro"><b>121g</b> protein</p><p class="opt-mac"><span>1,210 cal</span><span>84g carbs, 41g fat</span></p></div>
+          </div>
+        </div>
+        <div class="beast-img"><img src="images/beast-meal.jpg" alt="Beast Meal: burger, protein chips, protein cookie and protein brownie" width="1940" height="1020"></div>
       </div>
     </section>
 
     <!-- Shakes -->
-    <section class="menu-sec" id="shakes" aria-labelledby="h-shakes">
-      <div class="sec-head">
+    <section class="sec" id="shakes" aria-labelledby="h-shakes">
+      <header class="sec-head">
         <h2 id="h-shakes">Protein shakes</h2>
-        <p>Made fresh in-house.</p>
+        <p>Blended fresh in-house. 40g of protein or more in every cup.</p>
+      </header>
+      <div class="grid-3">
+        <article class="card card-row">
+          <div class="card-img"><img src="images/shake-chocolate.jpg" alt="Chocolate protein shake" width="360" height="480"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Chocolate</h3><p class="price">$5.99</p></div>
+            <p class="pro"><b>40g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>250</b> cal</li><li><b>15g</b> carbs</li><li><b>5g</b> fat</li></ul>
+          </div>
+        </article>
+        <article class="card card-row">
+          <div class="card-img"><img src="images/shake-vanilla.jpg" alt="Vanilla protein shake" width="360" height="480"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Vanilla</h3><p class="price">$5.99</p></div>
+            <p class="pro"><b>40g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>240</b> cal</li><li><b>14g</b> carbs</li><li><b>4g</b> fat</li></ul>
+          </div>
+        </article>
+        <article class="card card-row">
+          <div class="card-img"><img src="images/shake-pb-banana.jpg" alt="Peanut butter banana protein shake" width="360" height="520"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Peanut Butter Banana</h3><p class="price">$7.49</p></div>
+            <p class="pro"><b>42g</b> protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>380</b> cal</li><li><b>35g</b> carbs</li><li><b>12g</b> fat</li></ul>
+          </div>
+        </article>
       </div>
-      <ul class="shakes">
-        <li>
-          <img src="images/shake-chocolate.jpg" alt="" width="90" height="120">
-          <div><div class="row"><h3>Chocolate</h3><p class="price">$5.99</p></div><p class="protein sm"><b>40g</b> protein</p><p class="macros">~250 cal &nbsp;|&nbsp; 15g carbs &nbsp;|&nbsp; 5g fat</p></div>
-        </li>
-        <li>
-          <img src="images/shake-vanilla.jpg" alt="" width="90" height="120">
-          <div><div class="row"><h3>Vanilla</h3><p class="price">$5.99</p></div><p class="protein sm"><b>40g</b> protein</p><p class="macros">~240 cal &nbsp;|&nbsp; 14g carbs &nbsp;|&nbsp; 4g fat</p></div>
-        </li>
-        <li>
-          <img src="images/shake-pb-banana.jpg" alt="" width="90" height="130">
-          <div><div class="row"><h3>Peanut Butter Banana</h3><p class="price">$7.49</p></div><p class="protein sm"><b>42g</b> protein</p><p class="macros">~380 cal &nbsp;|&nbsp; 35g carbs &nbsp;|&nbsp; 12g fat</p></div>
-        </li>
-      </ul>
+    </section>
+
+    <!-- Snacks & sweets -->
+    <section class="sec" id="snacks" aria-labelledby="h-snacks">
+      <header class="sec-head">
+        <h2 id="h-snacks">Snacks &amp; sweets</h2>
+        <p>Protein chips instead of fries. Dessert that still pulls its weight.</p>
+      </header>
+      <div class="grid-5">
+        <article class="mini"><img src="images/protein-chips.jpg" alt="Protein chips" width="756" height="492"><div class="card-top"><h3>Protein Chips</h3><p class="price">$3.99</p></div><p class="pro sm"><b>19g</b> protein</p><p class="mini-mac">140 cal, 5g carbs, 6g fat</p></article>
+        <article class="mini"><img src="images/beef-jerky.jpg" alt="Halal beef jerky" width="756" height="500"><div class="card-top"><h3>Halal Beef Jerky</h3><p class="price">$10.99</p></div><p class="pro sm"><b>13g</b> protein</p><p class="mini-mac">70 cal, 2g carbs, 1g fat per serving</p></article>
+        <article class="mini"><img src="images/protein-cookie.jpg" alt="Protein cookie" width="756" height="500"><div class="card-top"><h3>Protein Cookie</h3><p class="price">$4.49</p></div><p class="pro sm"><b>16g</b> protein</p><p class="mini-mac">220 cal, 25g carbs, 9g fat</p></article>
+        <article class="mini"><img src="images/protein-brownie.jpg" alt="Protein brownie" width="756" height="492"><div class="card-top"><h3>Protein Brownie</h3><p class="price">$4.49</p></div><p class="pro sm"><b>15g</b> protein</p><p class="mini-mac">200 cal, 22g carbs, 7g fat</p></article>
+        <article class="mini"><img src="images/protein-bar.jpg" alt="Protein bar" width="756" height="488"><div class="card-top"><h3>Protein Bar</h3><p class="price">$4.99</p></div><p class="pro sm"><b>20g</b> protein</p><p class="mini-mac">200 cal, 18g carbs, 8g fat</p></article>
+      </div>
     </section>
 
     <!-- Yogurt & drinks -->
-    <section class="menu-sec" id="drinks" aria-labelledby="h-drinks">
-      <div class="sec-head">
+    <section class="sec" id="drinks" aria-labelledby="h-drinks">
+      <header class="sec-head">
         <h2 id="h-drinks">Yogurt &amp; drinks</h2>
-      </div>
+      </header>
       <div class="yd">
-        <article class="item yogurt">
-          <img src="images/yogurt-cup.jpg" alt="Blueberry Protein Yogurt Cup" width="342" height="425">
-          <div class="item-body">
-            <div class="row"><h3>Blueberry Protein Yogurt Cup</h3><p class="price">$7.99</p></div>
-            <p class="protein"><b>49g</b> protein</p>
-            <p class="build-line">1 cup Greek yogurt + 1 cup blueberries + 1 scoop protein</p>
-            <p class="macros">~330 cal &nbsp;|&nbsp; 31g carbs &nbsp;|&nbsp; 3g fat</p>
+        <article class="card card-wide">
+          <div class="card-img"><img src="images/yogurt-cup.jpg" alt="Blueberry Protein Yogurt Cup" width="1368" height="1700"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Blueberry Protein Yogurt Cup</h3><p class="price">$7.99</p></div>
+            <p class="pro"><b>49g</b> protein</p>
+            <p class="stack">1 cup Greek yogurt + 1 cup blueberries + 1 scoop protein</p>
+            <ul class="macro" aria-label="Nutrition"><li><b>330</b> cal</li><li><b>31g</b> carbs</li><li><b>3g</b> fat</li></ul>
           </div>
         </article>
         <div class="drinks">
@@ -247,34 +247,93 @@
       </div>
     </section>
 
+    <!-- Meal builder -->
+    <section class="build" id="build" aria-labelledby="h-build">
+      <div class="build-inner">
+        <header class="build-head">
+          <h2 id="h-build">Build your meal</h2>
+          <p>Pick what you want and watch the protein, calories, carbs and price add up.</p>
+        </header>
+        <form class="builder" id="builder" onsubmit="return false">
+          <div class="steps">
+            <fieldset>
+              <legend>Main</legend>
+              <div class="chips" data-group="main"></div>
+              <div class="mods">
+                <label><input type="checkbox" id="mod-double"> Double meat</label>
+                <label id="wrap-label"><input type="checkbox" id="mod-wrap"> Lettuce wrap instead of bun</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Snack</legend>
+              <div class="chips" data-group="snack"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Sweet</legend>
+              <div class="chips" data-group="sweet"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Shake or drink</legend>
+              <div class="chips" data-group="drink"></div>
+            </fieldset>
+          </div>
+          <aside class="totals" aria-live="polite">
+            <p class="tot-label">Your meal</p>
+            <p class="tot-pro"><b id="t-pro">0</b><span>g protein</span></p>
+            <dl class="tot-grid">
+              <div><dt>Calories</dt><dd id="t-cal">0</dd></div>
+              <div><dt>Carbs</dt><dd id="t-carb">0g</dd></div>
+              <div><dt>Price</dt><dd id="t-price">$0.00</dd></div>
+            </dl>
+            <ul class="tot-items" id="t-items"></ul>
+            <p class="tot-beast" id="t-beast" hidden></p>
+            <p class="tot-note">Values are approximate. The lettuce wrap removes the bun and its 12g of protein.</p>
+          </aside>
+        </form>
+      </div>
+    </section>
+
     <!-- Promise -->
     <section class="promise" aria-labelledby="h-promise">
       <h2 id="h-promise">Made to fuel you.</h2>
       <ul>
-        <li><h3>100% halal</h3><p>Every meat, snack, sweet and ingredient.</p></li>
-        <li><h3>Macros on everything</h3><p>Calories, protein, carbs and fat for every item on the menu.</p></li>
-        <li><h3>Made fresh</h3><p>Sandwiches and shakes are made to order in-house.</p></li>
+        <li><h3>100% halal</h3><p>Every meat, snack, sweet and ingredient on the menu.</p></li>
+        <li><h3>Macros on everything</h3><p>Calories, protein, carbs and fat for every item, so you can hit your numbers.</p></li>
+        <li><h3>Made fresh</h3><p>Sandwiches and shakes are made to order in our kitchen.</p></li>
       </ul>
     </section>
 
     <!-- Order -->
-    <section class="visit" id="visit" aria-labelledby="h-visit">
-      <h2 id="h-visit">Opening soon</h2>
-      <p class="visit-note">Lean Clean Grill is delivery-first. Ordering opens soon on the apps below.</p>
-      <!-- TODO: replace "Coming soon" with real delivery apps, delivery area, hours and phone -->
-      <dl>
-        <div><dt>Order on</dt><dd>Coming soon</dd></div>
-        <div><dt>Delivery area</dt><dd>Coming soon</dd></div>
-        <div><dt>Hours</dt><dd>Coming soon</dd></div>
-        <div><dt>Phone</dt><dd>Coming soon</dd></div>
-      </dl>
+    <section class="order" id="order" aria-labelledby="h-order">
+      <div class="order-inner">
+        <h2 id="h-order">Opening soon</h2>
+        <p class="order-note">Lean Clean Grill is delivery-first. Ordering opens soon on the apps below.</p>
+        <!-- TODO: replace "Coming soon" with real delivery apps, delivery area, hours and phone -->
+        <dl>
+          <div><dt>Order on</dt><dd>Coming soon</dd></div>
+          <div><dt>Delivery area</dt><dd>Coming soon</dd></div>
+          <div><dt>Hours</dt><dd>Coming soon</dd></div>
+          <div><dt>Phone</dt><dd>Coming soon</dd></div>
+        </dl>
+      </div>
     </section>
   </main>
 
   <footer class="foot">
-    <p class="foot-logo">Lean Clean <span>Grill</span></p>
-    <p class="foot-slogan">Eat like it matters.</p>
+    <div class="foot-inner">
+      <div class="foot-brand">
+        <p class="foot-logo">Lean Clean <span>Grill</span></p>
+        <p class="foot-line">Eat like it matters.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <div><h3>Menu</h3><a href="#sandwiches">Sandwiches</a><a href="#bowls">Bowls</a><a href="#beast">Beast Meal</a><a href="#shakes">Shakes</a></div>
+        <div><h3>Nutrition</h3><a href="#build">Meal builder</a><a href="#snacks">Snacks &amp; sweets</a><a href="#drinks">Drinks</a></div>
+        <div><h3>Order</h3><a href="#order">Delivery</a></div>
+      </nav>
+    </div>
     <p class="fine">Nutrition values are approximate. &copy; 2026 Lean Clean Grill.</p>
   </footer>
+
+  <script src="builder.js"></script>
 </body>
 </html>
