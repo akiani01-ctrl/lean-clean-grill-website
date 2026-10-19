@@ -5,9 +5,9 @@
       { id: 'classic', name: 'Classic Beef Burger', price: 9.99, pro: 39, cal: 450, carb: 40, bun: true, dbl: { price: 4.49, pro: 61, cal: 650 }, beast: 23.99 },
       { id: 'chicken', name: 'Grilled Chicken Sandwich', price: 8.99, pro: 56, cal: 520, carb: 40, bun: true, dbl: { price: 3.99, pro: 100, cal: 750 }, beast: 22.99 },
       { id: 'salmon', name: 'Salmon Sandwich', price: 14.99, pro: 46, cal: 600, carb: 40, bun: true, dbl: { price: 9.99, pro: 80, cal: 950 }, beast: 28.99 },
-      { id: 'cbowl', name: 'Chicken Bowl', price: 7.99, pro: 52, cal: 500, carb: 53 },
-      { id: 'bbowl', name: 'Beef Bowl', price: 10.49, pro: 41, cal: 570, carb: 53 },
-      { id: 'sbowl', name: 'Salmon Bowl', price: 13.49, pro: 42, cal: 620, carb: 53 },
+      { id: 'cbowl', name: 'Chicken Bowl', price: 7.99, pro: 52, cal: 500, carb: 53, dbl: { price: 3.99, pro: 96, cal: 730 } },
+      { id: 'bbowl', name: 'Beef Bowl', price: 10.49, pro: 41, cal: 570, carb: 53, dbl: { price: 4.49, pro: 63, cal: 770 } },
+      { id: 'sbowl', name: 'Salmon Bowl', price: 13.49, pro: 42, cal: 620, carb: 53, dbl: { price: 9.99, pro: 76, cal: 970 } },
       { id: 'none', name: 'No main' }
     ],
     snack: [
@@ -70,10 +70,12 @@
   function render() {
     var main = find('main');
     var isSandwich = !!main.bun;
-    dbl.disabled = !isSandwich;
+    var canDouble = !!main.dbl;
+    dbl.disabled = !canDouble;
     wrap.disabled = !isSandwich;
-    if (!isSandwich) { dbl.checked = false; wrap.checked = false; }
-    dbl.parentElement.classList.toggle('off', !isSandwich);
+    if (!canDouble) { dbl.checked = false; }
+    if (!isSandwich) { wrap.checked = false; }
+    dbl.parentElement.classList.toggle('off', !canDouble);
     wrap.parentElement.classList.toggle('off', !isSandwich);
 
     var t = { pro: 0, cal: 0, carb: 0, price: 0 };
@@ -82,7 +84,7 @@
     if (main.id !== 'none') {
       var m = { pro: main.pro, cal: main.cal, carb: main.carb, price: main.price };
       var name = main.name;
-      if (isSandwich && dbl.checked) {
+      if (canDouble && dbl.checked) {
         m.pro = main.dbl.pro; m.cal = main.dbl.cal; m.price += main.dbl.price;
         name += ', double meat';
       }
