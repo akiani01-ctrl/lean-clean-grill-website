@@ -6,4 +6,4 @@ It's a plain static site (`index.html`, `styles.css`, `images/`) with no build s
 
 ## Still to do
 
-- Fill in the "Opening soon" section with the address, hours, phone and online-ordering link (search for `TODO`).
+- Fill in the "Opening soon" section with the delivery apps, delivery area, hours and phone (search for `TODO`).

@@ -189,6 +189,7 @@ a { color: inherit; }
 
 /* ---------- Visit ---------- */
 .visit { padding-bottom: clamp(48px, 7vw, 88px); }
+.visit-note { margin-top: 10px; color: var(--gray); max-width: 56ch; }
 .visit dl { margin: 24px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .visit dl div { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
 .visit dt { font-weight: 700; }
